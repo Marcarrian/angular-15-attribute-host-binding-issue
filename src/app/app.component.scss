@@ -1,0 +1,20 @@
+:host {
+  &[data-foo="bar"] {
+    > div.example-1 {
+      background-color: cyan; // not working
+    }
+
+    div.example-2 {
+      background-color: yellow; // working
+    }
+
+    > section.example-3 {
+      background-color: red; // working
+    }
+
+    section.example-4 {
+      background-color: green; // working
+    }
+  }
+}
+
