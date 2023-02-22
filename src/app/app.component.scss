@@ -16,5 +16,17 @@
       background-color: green; // working
     }
   }
+
+  &:is([data-foo="bar"]) {
+    > div.example-5 {
+      background-color: lightskyblue; // working in dev and prod build
+    }
+  }
+
+  &:is([data-foo="bar"], [data-foo-2="bar-2"]) {
+    > div.example-6 {
+      background-color: violet; // ONLY working in PROD build
+    }
+  }
 }
 

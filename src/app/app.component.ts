@@ -9,4 +9,7 @@ export class AppComponent {
 
   @HostBinding('attr.data-foo')
   public foo = 'bar';
+
+  @HostBinding('attr.data-foo-2')
+  public fooTwo = 'bar-2';
 }

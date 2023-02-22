@@ -10,3 +10,19 @@
 <section class="example-4">
   Example 4 (css: section)
 </section>
+<div class="example-5">
+  Example 5
+  &amp;:is([data-foo=&quot;bar&quot;]) {{ "{" }}
+  &gt; div.example-5 {{ "{" }}
+  background-color: lightskyblue;
+  {{ "}" }}
+  {{ "}" }}
+</div>
+<div class="example-6">
+  Example 6 (css: div)
+  &amp;:is([data-foo=&quot;bar&quot;], [data-foo-2=&quot;bar-2&quot;]) {{ "{" }}
+  &gt; div.example-6 {{ "{" }}
+  background-color: violet;
+  {{ "}" }}
+  {{ "}" }}
+</div>
